@@ -1,0 +1,26 @@
+!SESSION 2019-09-14 15:40:02.615 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-14 15:45:08.096
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2019-09-14 15:48:19.015
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/splab-ufcg/claret/master/br.edu.ufcg.splab.claret.update/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2019-09-14 15:48:40.104
+!MESSAGE Server returned lastModified <= 0 for https://raw.githubusercontent.com/splab-ufcg/claret/master/br.edu.ufcg.splab.claret.update/artifacts.jar
+!SESSION 2019-09-14 15:58:46.791 -----------------------------------------------
+eclipse.buildId=4.12.0.I20190605-1800
+java.version=1.8.0_191
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -data file:/home/mainara/MP1-v&v-workspace/ -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.core 1 0 2019-09-14 15:58:55.192
+!MESSAGE Using Apache MINA sshd as ssh client.

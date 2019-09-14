@@ -1,0 +1,10 @@
+1 1
+2 2
+3 3
+4 4
+5 5
+#
+1 2 [c] There is active connection and user is logged in. The user has chosen the delivery location
+2 3 [s] Ifood User clicks on the chosen restaurant button
+3 4 [e] system displays restaurant name, distance, rating, delivery time and food options
+4 5 [c] final condition. other condition

@@ -1,0 +1,24 @@
+/*
+ * This is an example claret specification
+ */
+systemName "Ifood"
+
+usecase "Buying food" {
+  version "0.1" type "Creation" user "Group1" date "14/09/2019"
+  actor ifoodUser "Ifood User"
+  
+  preCondition "There is active connection and user is logged in", 
+  "The user has chosen the delivery location"
+  
+  basic {
+    step 1 ifoodUser "clicks on the chosen restaurant button"
+    step 2 system "displays restaurant name, distance, rating, delivery time and food options"
+  }
+  
+  // Alternatives scenarios here...
+  
+  // Exceptions scenarios here...
+  
+  postCondition "final condition", "other condition"
+}
+

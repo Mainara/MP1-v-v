@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MP1-v&amp;v/src/mp1.claret.claret&apos; to &apos;mp1.claret&apos;" description="Rename resource &apos;mp1.claret.claret&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/mp1.claret.claret" name="mp1.claret" stamp="1568487955740" updateReferences="true"/>
+</session>
