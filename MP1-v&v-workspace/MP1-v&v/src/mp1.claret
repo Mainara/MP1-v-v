@@ -13,9 +13,19 @@ usecase "Buying food" {
   basic {
     step 1 ifoodUser "clicks on the chosen restaurant button"
     step 2 system "displays restaurant name, distance, rating, delivery time and food options"
+    step 3 ifoodUser "clicks on the chosen food"
+    step 4 system "displays item details (description and price), ifoodUser-selectable item specifications, and a field to add notes"
+    step 5 ifoodUser "choose item specifications, add some notes (if any) and click the 'add' button"
+    step 6 system "adds item to bag"
+    step 7 ifoodUser "clicks the button to see the bag"
+    step 8 system "displays location where the items will be delivered, delivery time, restaurant name, items chosen, price, coupon option, payment method and order button"
+  	step 9 ifoodUser "choose payment method and click the order button"
+  	step 10 system "displays order status and expected delivery time"
   }
   
-  // Alternatives scenarios here...
+//  alternative 1 "unauthorized purchase using ifoodUser chosen payment method" {
+//  	 step 1 ifoodUser ""
+//  }
   
   // Exceptions scenarios here...
   
