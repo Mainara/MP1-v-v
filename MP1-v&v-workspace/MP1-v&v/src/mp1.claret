@@ -5,29 +5,65 @@ systemName "Ifood"
 
 usecase "Buying food" {
   version "0.1" type "Creation" user "Group1" date "14/09/2019"
-  actor ifoodUser "Ifood User"
+  actor iFoodUser "iFood User"
   
   preCondition "There is active connection and user is logged in", 
   "The user has chosen the delivery location"
   
   basic {
-    step 1 ifoodUser "clicks on the chosen restaurant button"
+  	step 1 iFoodUser "clicks on restaurants button and click in one restaurant" af[1,2]
     step 2 system "displays restaurant name, distance, rating, delivery time and food options"
-    step 3 ifoodUser "clicks on the chosen food"
-    step 4 system "displays item details (description and price), ifoodUser-selectable item specifications, and a field to add notes"
-    step 5 ifoodUser "choose item specifications, add some notes (if any) and click the 'add' button"
+    step 3 iFoodUser "clicks on the chosen food" af[3]
+    step 4 system "displays item details (description and price), ifoodUser-selectable item 
+			specifications, and a field to add notes"
+    step 5 iFoodUser "choose item specifications, add some notes (if any) and click the 'add' button"
     step 6 system "adds item to bag"
-    step 7 ifoodUser "clicks the button to see the bag"
-    step 8 system "displays location where the items will be delivered, delivery time, restaurant name, items chosen, price, coupon option, payment method and order button"
-  	step 9 ifoodUser "choose payment method and click the order button"
-  	step 10 system "displays order status and expected delivery time"
+    step 7 iFoodUser "clicks the button to see the bag"
+    step 8 system "displays location where the items will be delivered, delivery time, 
+			restaurant name, items chosen, price, coupon option, payment method and order button" ef[1]
+  	step 9 iFoodUser "choose payment method and click the order button"
+  	step 10 system "displays order status and expected delivery time" ef[3]
+  	step 11 iFoodUser "clicks the see details button" af[4]
+  	step 12 system "displays order items, status, payment method and order tracking"
+  }
+
+  alternative 1 "Choose from favorite restaurants" {
+  	step 1 iFoodUser "clicks on favorites button"
+  	step 2 system "displays user favorite restaurants"
+  	step 3 iFoodUser "clicks on chosen restaurant" bs 2
+  }
+    
+  alternative 2 "Choose from previous restaurants" {
+  	step 1 iFoodUser "clicks on previous restaurants button"
+  	step 2 system "displays user previous restaurants"
+  	step 3 iFoodUser "clicks on chosen restaurant" bs 2
   }
   
-//  alternative 1 "unauthorized purchase using ifoodUser chosen payment method" {
-//  	 step 1 ifoodUser ""
-//  }
+  alternative 3 "Recover from previous orders" {
+  	step 1 iFoodUser "clicks on previous orders button"
+  	step 2 system "presents a list of user orders"
+  	step 3 iFoodUser "select one order" 
+  	step 4 system "list items from previous order" ef[2]
+  	step 5 iFoodUser "select items from order to add into current bag" bs 8
+  }
   
-  // Exceptions scenarios here...
+  alternative 4 "Cancel order" {
+  	step 1 iFoodUser "clicks on cancel order button"
+  	step 2 system "presents a confirmation dialog"
+  	step 3 iFoodUser "selects cancel button" bs 2
+  }
+  
+  exception 1 "Restaurant is closed" {
+  	step 1 system "informs that chosen restaurant is closed" bs 1
+  }
+  
+  exception 2 "Item not available" {
+  	step 1 system "alerts the user that chosen item from previous order is not available" bs 2 //falta deixar o cliente alterar a escolha
+  }
+  
+  exception 3 "Unauthorized payment method" {
+  	step 1 system "alerts the user that chosen payment method was unauthorized" bs 9
+  }
   
   postCondition "final condition", "other condition"
 }

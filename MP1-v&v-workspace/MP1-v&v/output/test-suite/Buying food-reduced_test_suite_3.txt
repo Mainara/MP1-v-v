@@ -1,14 +1,14 @@
 /**
  *	 >>> REDUCED TEST SUITE (Sim with Jaccard Index - Transition Coverage) <<<
  *
- * - Calculated Maximum Test Case Size: 1
+ * - Calculated Maximum Test Case Size: 5
  *
  * - Equation:
  *
  *     maxTestCaseSize = (b + max(a, e))/2
  * 
  *     where:
- *       b (Total of Basic Flow Steps): 2
+ *       b (Total of Basic Flow Steps): 10
  *       a (Total of Steps from Greater Alternative Flow): 0
  *       e (Total of Steps from Greater Exception Flow): 0
  *
@@ -18,5 +18,9 @@
 Test Case: 1
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 Ifood User clicks on the chosen restaurant button -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+Ifood User clicks on the chosen food -> SYSTEM displays item details (description and price), ifoodUser-selectable item specifications, and a field to add notes
+Ifood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+Ifood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time, restaurant name, items chosen, price, coupon option, payment method and order button
+Ifood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
 Postcondition: final condition. other condition
 

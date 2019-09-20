@@ -3,8 +3,24 @@
 3 3
 4 4
 5 5
+6 6
+7 7
+8 8
+9 9
+10 10
+11 11
+12 12
+13 13
 #
 1 2 [c] There is active connection and user is logged in. The user has chosen the delivery location
 2 3 [s] Ifood User clicks on the chosen restaurant button
 3 4 [e] system displays restaurant name, distance, rating, delivery time and food options
-4 5 [c] final condition. other condition
+4 5 [s] Ifood User clicks on the chosen food
+5 6 [e] system displays item details (description and price), ifoodUser-selectable item specifications, and a field to add notes
+6 7 [s] Ifood User choose item specifications, add some notes (if any) and click the 'add' button
+7 8 [e] system adds item to bag
+8 9 [s] Ifood User clicks the button to see the bag
+9 10 [e] system displays location where the items will be delivered, delivery time, restaurant name, items chosen, price, coupon option, payment method and order button
+10 11 [s] Ifood User choose payment method and click the order button
+11 12 [e] system displays order status and expected delivery time
+12 13 [c] final condition. other condition
