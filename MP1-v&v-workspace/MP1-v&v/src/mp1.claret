@@ -3,8 +3,10 @@
  */
 systemName "Ifood"
 
+maxTestCaseSize 9
+
 usecase "Buying food" {
-  version "0.1" type "Creation" user "Group1" date "14/09/2019"
+  version "0.1" type "Creation" user "Some User" date "14/09/2019"
   actor iFoodUser "iFood User"
   
   preCondition "There is active connection and user is logged in", 

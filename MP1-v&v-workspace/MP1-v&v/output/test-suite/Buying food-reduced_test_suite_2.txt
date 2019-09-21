@@ -1,30 +1,21 @@
 /**
  *	 >>> REDUCED TEST SUITE (Greedy Heuristic - Transition Pair Coverage) <<<
  *
- * - Calculated Maximum Test Case Size: 8
+ * - Informed Maximum Test Case Size: 9
  *
- * - Equation:
- *
- *     maxTestCaseSize = (b + max(a, e))/2
- * 
- *     where:
- *       b (Total of Basic Flow Steps): 12
- *       a (Total of Steps from Greater Alternative Flow): 5
- *       e (Total of Steps from Greater Exception Flow): 1
- *
- * - Total of Generated Test Cases: 27
+ * - Total of Generated Test Cases: 43
  */
 
 Test Case: 1
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
 iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
 iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM list items from previous order
-iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
-iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
-iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
-Postcondition: successfully chosen and processed food
+iFood User select one order -> SYSTEM please choose food from the menu
 
 Test Case: 2
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
@@ -39,33 +30,35 @@ iFood User select one order -> SYSTEM please choose food from the menu
 
 Test Case: 3
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM list items from previous order
-iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
 iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
 iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
 iFood User select one order -> SYSTEM please choose food from the menu
 
 Test Case: 4
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
-iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
 iFood User select one order -> SYSTEM list items from previous order
 iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
 iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
 iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
 Postcondition: successfully chosen and processed food
 
 Test Case: 5
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
 iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM list items from previous order
-iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
 iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
 iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
 iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
@@ -74,37 +67,36 @@ Postcondition: successfully chosen and processed food
 Test Case: 6
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
-iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
-iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
-iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
 iFood User select one order -> SYSTEM please choose food from the menu
 
 Test Case: 7
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM list items from previous order
-iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
-iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
-iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
-iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
-Postcondition: successfully chosen and processed food
+iFood User select one order -> SYSTEM please choose food from the menu
 
 Test Case: 8
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
 iFood User select one order -> SYSTEM list items from previous order
-iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
-iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
-iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
-Postcondition: successfully chosen and processed food
+iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
 
 Test Case: 9
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
 iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
 iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
@@ -116,9 +108,9 @@ Postcondition: successfully chosen and processed food
 Test Case: 10
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
-iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
-iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
 iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
 iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
 iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
@@ -126,11 +118,12 @@ Postcondition: successfully chosen and processed food
 
 Test Case: 11
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
-iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
 iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
 iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
 iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
 iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
 iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
@@ -152,38 +145,58 @@ Precondition: There is active connection and user is logged in. The user has cho
 iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
 iFood User select one order -> SYSTEM list items from previous order
-iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
-iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM please choose food from the menu
+iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
+Postcondition: successfully chosen and processed food
 
 Test Case: 14
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM please choose food from the menu
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
+Postcondition: successfully chosen and processed food
 
 Test Case: 15
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
 iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM please choose food from the menu
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
+Postcondition: successfully chosen and processed food
 
 Test Case: 16
-Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
-iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM please choose food from the menu
-
-Test Case: 17
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
 iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
 iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
-iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks on cancel order button -> SYSTEM presents a confirmation dialog
+iFood User selects cancel button -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 17
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
 iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
 iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
 iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
@@ -195,38 +208,26 @@ iFood User clicks on restaurants button and click in one restaurant -> SYSTEM di
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
 iFood User select one order -> SYSTEM list items from previous order
 iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
-iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
-iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks on cancel order button -> SYSTEM presents a confirmation dialog
+iFood User selects cancel button -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 19
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
 iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
 iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
 Postcondition: successfully chosen and processed food
 
-Test Case: 19
-Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
-iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
-iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
-iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
-iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM please choose food from the menu
-
 Test Case: 20
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
-iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
-iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
-iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
 iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM please choose food from the menu
-
-Test Case: 21
-Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
-iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
 iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
 iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
@@ -234,14 +235,25 @@ iFood User choose payment method and click the order button -> SYSTEM alerts the
 iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
 iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
 Postcondition: successfully chosen and processed food
+
+Test Case: 21
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
 
 Test Case: 22
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
 iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
-iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
-iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
 iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
 iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
 Postcondition: successfully chosen and processed food
@@ -249,17 +261,6 @@ Postcondition: successfully chosen and processed food
 Test Case: 23
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM list items from previous order
-iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
-iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
-iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
-iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
-iFood User select one order -> SYSTEM please choose food from the menu
-
-Test Case: 24
-Precondition: There is active connection and user is logged in. The user has chosen the delivery location
-iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
 iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
 iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
@@ -268,7 +269,27 @@ iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, dista
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
 iFood User select one order -> SYSTEM please choose food from the menu
 
+Test Case: 24
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
+Postcondition: successfully chosen and processed food
+
 Test Case: 25
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 26
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
 iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
@@ -279,7 +300,175 @@ iFood User clicks on restaurants button and click in one restaurant -> SYSTEM di
 iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
 iFood User select one order -> SYSTEM please choose food from the menu
 
-Test Case: 26
+Test Case: 27
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
+Postcondition: successfully chosen and processed food
+
+Test Case: 28
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
+Postcondition: successfully chosen and processed food
+
+Test Case: 29
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 30
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 31
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 32
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 33
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 34
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 35
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 36
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 37
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
+Postcondition: successfully chosen and processed food
+
+Test Case: 38
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on favorites button -> SYSTEM displays user favorite restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
+Postcondition: successfully chosen and processed food
+
+Test Case: 39
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
+iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 40
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+iFood User choose item specifications, add some notes (if any) and click the 'add' button -> SYSTEM adds item to bag
+iFood User clicks the button to see the bag -> SYSTEM displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM alerts the user that chosen payment method was unauthorized
+iFood User choose payment method and click the order button -> SYSTEM displays order status and expected delivery time
+iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
+Postcondition: successfully chosen and processed food
+
+Test Case: 41
+Precondition: There is active connection and user is logged in. The user has chosen the delivery location
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM list items from previous order
+iFood User select items from order to add into current bag -> SYSTEM informs that chosen restaurant is closed
+iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
+iFood User clicks on previous orders button -> SYSTEM presents a list of user orders
+iFood User select one order -> SYSTEM please choose food from the menu
+
+Test Case: 42
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 iFood User clicks on previous restaurants button -> SYSTEM displays user previous restaurants
 iFood User clicks on chosen restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
@@ -291,7 +480,7 @@ iFood User choose payment method and click the order button -> SYSTEM displays o
 iFood User clicks the see details button -> SYSTEM displays order items, status, payment method and order tracking
 Postcondition: successfully chosen and processed food
 
-Test Case: 27
+Test Case: 43
 Precondition: There is active connection and user is logged in. The user has chosen the delivery location
 iFood User clicks on restaurants button and click in one restaurant -> SYSTEM displays restaurant name, distance, rating, delivery time and food options
 iFood User clicks on the chosen food from the menu -> SYSTEM displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
