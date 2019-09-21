@@ -23,28 +23,97 @@
 23 23
 24 24
 25 25
+26 26
+27 27
+28 28
+29 29
+30 30
+31 31
+32 32
+33 33
+34 34
+35 35
+36 36
+37 37
+38 38
+39 39
+40 40
+41 41
+42 42
+43 43
+44 44
+45 45
+46 46
+47 47
+48 48
+49 49
+50 50
+51 51
+52 52
+53 53
+54 54
+55 55
+56 56
 #
-1 14 conditions
-14 2 There is active connection and user is logged in. The user has chosen the delivery location
-2 15 steps
-15 3 Ifood User clicks on the chosen restaurant button
-3 16 expected_results
-16 4 system displays restaurant name, distance, rating, delivery time and food options
-4 17 steps
-17 5 Ifood User clicks on the chosen food
-5 18 expected_results
-18 6 system displays item details (description and price), ifoodUser-selectable item specifications, and a field to add notes
-6 19 steps
-19 7 Ifood User choose item specifications, add some notes (if any) and click the 'add' button
-7 20 expected_results
-20 8 system adds item to bag
-8 21 steps
-21 9 Ifood User clicks the button to see the bag
-9 22 expected_results
-22 10 system displays location where the items will be delivered, delivery time, restaurant name, items chosen, price, coupon option, payment method and order button
-10 23 steps
-23 11 Ifood User choose payment method and click the order button
-11 24 expected_results
-24 12 system displays order status and expected delivery time
-12 25 conditions
-25 13 final condition. other condition
+1 26 conditions
+26 2 There is active connection and user is logged in. The user has chosen the delivery location
+2 27 steps
+27 3 iFood User clicks on restaurants button and click in one restaurant
+3 28 expected_results
+28 4 system displays restaurant name, distance, rating, delivery time and food options
+4 29 steps
+29 5 iFood User clicks on the chosen food from the menu
+5 30 expected_results
+30 6 system displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+6 31 steps
+31 7 iFood User choose item specifications, add some notes (if any) and click the 'add' button
+7 32 expected_results
+32 8 system adds item to bag
+8 33 steps
+33 9 iFood User clicks the button to see the bag
+9 34 expected_results
+34 10 system displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+10 35 steps
+35 11 iFood User choose payment method and click the order button
+11 36 expected_results
+36 12 system displays order status and expected delivery time
+12 37 steps
+37 13 iFood User clicks the see details button
+13 38 expected_results
+38 14 system displays order items, status, payment method and order tracking
+14 39 conditions
+39 15 successfully chosen and processed food
+2 40 steps
+40 16 iFood User clicks on favorites button
+16 41 expected_results
+41 17 system displays user favorite restaurants
+17 42 steps
+42 3 iFood User clicks on chosen restaurant
+2 43 steps
+43 18 iFood User clicks on previous restaurants button
+18 44 expected_results
+44 19 system displays user previous restaurants
+19 45 steps
+45 3 iFood User clicks on chosen restaurant
+4 46 steps
+46 20 iFood User clicks on previous orders button
+20 47 expected_results
+47 21 system presents a list of user orders
+21 48 steps
+48 22 iFood User select one order
+22 49 expected_results
+49 23 system list items from previous order
+23 50 steps
+50 9 iFood User select items from order to add into current bag
+9 51 expected_results
+51 2 system informs that chosen restaurant is closed
+11 52 expected_results
+52 10 system alerts the user that chosen payment method was unauthorized
+12 53 steps
+53 24 iFood User clicks on cancel order button
+24 54 expected_results
+54 25 system presents a confirmation dialog
+25 55 steps
+55 3 iFood User selects cancel button
+22 56 expected_results
+56 15 system please choose food from the menu

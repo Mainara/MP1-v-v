@@ -1,5 +1,5 @@
 /*
- * This is an example claret specification
+ * This is a claret specification to mini project 01
  */
 systemName "Ifood"
 
@@ -13,9 +13,9 @@ usecase "Buying food" {
   basic {
   	step 1 iFoodUser "clicks on restaurants button and click in one restaurant" af[1,2]
     step 2 system "displays restaurant name, distance, rating, delivery time and food options"
-    step 3 iFoodUser "clicks on the chosen food" af[3]
+    step 3 iFoodUser "clicks on the chosen food from the menu" af[3]
     step 4 system "displays item details (description and price), ifoodUser-selectable item 
-			specifications, and a field to add notes"
+			specifications, and a field to add notes" 
     step 5 iFoodUser "choose item specifications, add some notes (if any) and click the 'add' button"
     step 6 system "adds item to bag"
     step 7 iFoodUser "clicks the button to see the bag"
@@ -58,13 +58,12 @@ usecase "Buying food" {
   }
   
   exception 2 "Item not available" {
-  	step 1 system "alerts the user that chosen item from previous order is not available" bs 2 //falta deixar o cliente alterar a escolha
+  	step 1 system "please choose food from the menu" bs 3
   }
   
   exception 3 "Unauthorized payment method" {
   	step 1 system "alerts the user that chosen payment method was unauthorized" bs 9
   }
   
-  postCondition "final condition", "other condition"
+  postCondition "successfully chosen and processed food"
 }
-

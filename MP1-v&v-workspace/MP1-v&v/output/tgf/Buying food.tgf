@@ -11,16 +11,47 @@
 11 11
 12 12
 13 13
+14 14
+15 15
+16 16
+17 17
+18 18
+19 19
+20 20
+21 21
+22 22
+23 23
+24 24
+25 25
 #
 1 2 [c] There is active connection and user is logged in. The user has chosen the delivery location
-2 3 [s] Ifood User clicks on the chosen restaurant button
+2 3 [s] iFood User clicks on restaurants button and click in one restaurant
 3 4 [e] system displays restaurant name, distance, rating, delivery time and food options
-4 5 [s] Ifood User clicks on the chosen food
-5 6 [e] system displays item details (description and price), ifoodUser-selectable item specifications, and a field to add notes
-6 7 [s] Ifood User choose item specifications, add some notes (if any) and click the 'add' button
+4 5 [s] iFood User clicks on the chosen food from the menu
+5 6 [e] system displays item details (description and price), ifoodUser-selectable item  specifications, and a field to add notes
+6 7 [s] iFood User choose item specifications, add some notes (if any) and click the 'add' button
 7 8 [e] system adds item to bag
-8 9 [s] Ifood User clicks the button to see the bag
-9 10 [e] system displays location where the items will be delivered, delivery time, restaurant name, items chosen, price, coupon option, payment method and order button
-10 11 [s] Ifood User choose payment method and click the order button
+8 9 [s] iFood User clicks the button to see the bag
+9 10 [e] system displays location where the items will be delivered, delivery time,  restaurant name, items chosen, price, coupon option, payment method and order button
+10 11 [s] iFood User choose payment method and click the order button
 11 12 [e] system displays order status and expected delivery time
-12 13 [c] final condition. other condition
+12 13 [s] iFood User clicks the see details button
+13 14 [e] system displays order items, status, payment method and order tracking
+14 15 [c] successfully chosen and processed food
+2 16 [s] iFood User clicks on favorites button
+16 17 [e] system displays user favorite restaurants
+17 3 [s] iFood User clicks on chosen restaurant
+2 18 [s] iFood User clicks on previous restaurants button
+18 19 [e] system displays user previous restaurants
+19 3 [s] iFood User clicks on chosen restaurant
+4 20 [s] iFood User clicks on previous orders button
+20 21 [e] system presents a list of user orders
+21 22 [s] iFood User select one order
+22 23 [e] system list items from previous order
+23 9 [s] iFood User select items from order to add into current bag
+9 2 [e] system informs that chosen restaurant is closed
+11 10 [e] system alerts the user that chosen payment method was unauthorized
+12 24 [s] iFood User clicks on cancel order button
+24 25 [e] system presents a confirmation dialog
+25 3 [s] iFood User selects cancel button
+22 15 [e] system please choose food from the menu
